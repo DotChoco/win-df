@@ -10,14 +10,14 @@ $VIDIR = $json.vidir
 
 # Global Inmutables Variables
 $DFDIR = "$DEVDIR/dot-files"
-$CONTADIR = "$PWSDIR/Modules/Contability"
+$CONTADIR = "$PWSDIR/Modules/fa"
 
 
 # Imports
-Import-Module System -Force
-Import-Module Styles -Force
-Import-Module Maths -Force
-Import-Module Contability -Force
+Import-Module core -Force
+Import-Module styles -Force
+Import-Module maths -Force
+Import-Module fa -Force
 
 Remove-Variable BasePath -ErrorAction SilentlyContinue
 
