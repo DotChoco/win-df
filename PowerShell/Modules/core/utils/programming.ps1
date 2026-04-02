@@ -77,8 +77,12 @@ function asrs { httpd -k restart }
 # Linux
 function lnh { wsl.exe --cd "~" }
 
+# Create Tauri App
+function tauri_new { cargo create-tauri-app }
+
 
 # Alias
+Set-Alias tnw tauri_new
 Set-Alias lnx  wsl.exe
 Set-Alias vi nvim
 Set-Alias sr surreal.exe # Surreal

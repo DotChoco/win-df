@@ -43,6 +43,7 @@ function co {
 }
 
 Set-Alias cdx codex
+Set-Alias cld claude
 Set-Alias tre tree
 Set-Alias ob obsidian
 Set-Alias g git
