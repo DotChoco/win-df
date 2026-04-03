@@ -29,7 +29,7 @@ function ISR{
 
   # Set the value from the map if exists, else set the default value "dia.csv"
   $file = if ($mapa.ContainsKey($Periodicidad)) { "isr_" + $mapa[$Periodicidad] } else { "isr_dia.csv" }
-  $data = Import-Csv -Path "$CONTADIR/docs/$file" -Delimiter ','
+  $data = Import-Csv -Path "$CONTADIR/isr/2026/$file" -Delimiter ','
 
   foreach ($row in $data) {
     # Convert the fields to decimal values
